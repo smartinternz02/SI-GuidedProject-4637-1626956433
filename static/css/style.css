@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  background-color: white;
+  font-family: "Montserrat";
+  background-image: url('https://image.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.container {
+  min-width: 480px;
+  min-height: 350px;
+  border-radius: 20px;
+  position: relative;
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.side {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 50px;
+  color: #fff;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.content {
+  transform: translatez(70px) scale(0.8);
+  line-height: 1.5em;
+}
+.content h1 {
+  position: relative;
+  font-family: calibri;
+}
+.content p {
+  margin-top: 50px;
+  line-height: 1.5em;
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: calibri;
+}
+.content h1:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  height: 3px;
+  background-color: #3e3;
+  width: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.front1{
+  z-index: 2;
+  background-size: 100vh;
+  background-size: cover;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZnIFOpV0VAee1MJFq1T9o4aER6j5Mih5aQ&usqp=CAU);
+}
+.back1{
+  background-color: #333;
+  transform: rotateY(180deg);
+  z-index: 0;
+  padding-top: 10px;
+  background-color: black;
+}
+.front2{
+  z-index: 2;
+  background-size: 100vh;
+  background-size: cover;
+  background-image: url(https://thumbs.dreamstime.com/b/megaphone-hand-business-concept-text-real-versus-fake-vector-illustration-megaphone-hand-business-concept-real-versus-fake-113431555.jpg);
+}
+.back2{
+  background-color: #333;
+  transform: rotateY(180deg);
+  z-index: 0;
+  padding-top: 10px;
+  background-image: url(https://images.all-free-download.com/images/graphicthumb/metal_core_texture_background_of_highdefinition_picture_170877.jpg);
+}
+.front3{
+  z-index: 2;
+  background-size: 100vh;
+  background-size: cover;
+  background-image: url(https://bit.ly/2UZDLkl);
+}
+.back3{
+  background-color: #333;
+  transform: rotateY(180deg);
+  z-index: 0;
+  padding-top: 10px;
+  background-color: black;
+}
+.container:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+form {
+  text-align: left;
+}
+.back h1 {
+  margin: 0;
+}
+form label,
+form input {
+  display: block;
+}
+form input,
+form textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #444;
+  padding: 5px;
+  width: 100%;
+  color: #fff;
+}
+form label {
+  margin: 15px 0;
+}
+form input[type="submit"] {
+  display: block;
+  width: auto;
+  margin: 10px auto;
+  padding: 5px 10px;
+  border: 3px solid #555;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+/* my button style  */
+.white-mode {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #122;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.35s ease-in-out;
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  font-family: "Montserrat";
+}
+
+.white-mode:hover {
+  background-color: #fff;
+  color: #122;
+}
+.text-block {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: lightsteelblue;
+  color: black;
+  font-family: calibri;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+input[type=url] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+::placeholder {
+  color: white;
+  opacity: 1; 
+}
+input[type=submit]{
+  background-color: black;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.header {
+      position: relative;
+      top:0;  
+      margin:0px;
+      z-index: 1;
+      left: 0px;
+      right: 0px;
+      position: fixed;
+      background-color: black ;
+      color: white;
+      box-shadow: 0px 8px 2px grey;
+      overflow: hidden;
+      padding-right:0px;
+      font-family: cursive;
+      font-size: 3vw;
+      width: 100%;
+      height:12%;
+      text-align: center;
+
+    }
