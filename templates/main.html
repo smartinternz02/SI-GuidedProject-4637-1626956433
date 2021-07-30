@@ -1,0 +1,68 @@
+<html>
+<head>
+<link rel="stylesheet" href="/static/css/style.css">
+<body>
+<center>
+<div class="header">    
+<div style="padding-top: 1%;">FAKE NEWS ANALYSIS</div>
+</div>
+</center>
+
+  <div class="container">
+  <div class="front1 side">
+    <div class="content">
+    </div>
+  </div>
+  <div class="back1 side">
+    <div class="content">
+      <h1>Fake News</h1>
+      <p>“Fake news” is a term that has come to mean different things to different people. At its core, we are defining “fake news” as those news stories that are false: the story itself is fabricated, with no verifiable facts, sources or quotes. Sometimes these stories may be propaganda that is intentionally designed to mislead the reader or maybe designed as “clickbait” written for economic incentives (the writer profits on the number of people who click on the story). </p>
+    </div>
+  </div>
+
+</div>&ensp;&ensp;
+
+<div class="container">
+  <div class="front2 side">
+    <div class="text-block">
+    <h2>Predict Fake News</h2><br>
+    <p style="padding-bottom: 1%;"><b>Check your news article Real or Fake by url.</b></p>
+  </div>
+  </div>
+  <div class="back2 side">
+    <div class="content">
+      <h1>PREDICT FAKE NEWS</h1><br><br><br><br>
+      <form action = "/predict" method = "post">
+        <input type = "url", name = "link", placeholder="Enter url here"><br>
+        <center>
+          <button type="submit" class ="button" value="Submit">Predict</button>
+      </center>
+      </form>
+      <p style="color: black;text-align: center;font-size: 200%"><b>{{y}}</b></p>
+    </div>
+  </div>
+
+</div>&ensp;&ensp;
+
+<div class="container">
+  <div class="front3 side">
+    <div class="content">
+    </div>
+  </div>
+  <div class="back3 side">
+    <div class="content">
+      <h1>Real News</h1>
+      <p>"Real news" is written by professional journalists who adhere to ethical guidelines for gathering and writing the news.  Examples of journalistic codes of ethics:<br><br>
+      <ul>
+        <li align="left">Society of Professional Journalists code of ethics</li>
+        <li align="left"> Seek truth and report it</li>
+        <li align="left">Minimize harm</li>
+        <li align="left">Act independently</li>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
