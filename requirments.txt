@@ -1,0 +1,15 @@
+flask-cors
+numpy
+newspaper3k
+sklearn
+pandas
+flask
+nltk
+
+In nltk download the below libraries:
+brown
+punkt
+maxent_treebank_pos_tagger
+movie_reviews
+wordnet
+stopwords
